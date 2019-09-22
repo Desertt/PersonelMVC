@@ -15,8 +15,8 @@ namespace PersonelMVC
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{depatmanid}",
+                defaults: new { controller = "Home", action = "Index", depatmanid = UrlParameter.Optional }
             );
         }
     }
