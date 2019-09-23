@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace PersonelMVC.Controllers
 {
@@ -12,6 +8,12 @@ namespace PersonelMVC.Controllers
         public ActionResult Index()
         {
             return Content("Personel Anasayfa");
+        }
+
+        [Route("personel/liste/{siralama}/{sayfa}")]
+        public ActionResult PersonelListesiGetir(string siralama, int sayfa)
+        {
+            return Content(siralama + "-" + sayfa);
         }
     }
 }
