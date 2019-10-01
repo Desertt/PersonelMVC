@@ -10,10 +10,10 @@ namespace PersonelMVC.Controllers
             return Content("Personel Anasayfa");
         }
 
-        [Route("personel/liste/{siralama}/{sayfa}")]
-        public ActionResult PersonelListesiGetir(string siralama, int sayfa)
-        {
-            return Content(siralama + "-" + sayfa);
-        }
+        //[Route("personel/liste/{siralama}/{sayfa}")]
+        //public ActionResult PersonelListesiGetir(string siralama, int sayfa)
+        //{
+        //    return Content(siralama + "-" + sayfa);
+        //}
     }
 }
