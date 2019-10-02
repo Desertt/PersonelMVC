@@ -77,8 +77,9 @@ namespace PersonelMVC.Controllers
 
         public ActionResult Detay(int id)
         {
-            ViewData["departmanId"] = id;
-            return View();//geriye html döndüreceğimizi belirtiyoruz
+            var departman = new Departman() { Id = id, Ad = "Bilgi İşlem" };
+            ViewData["departman"] = departman;
+            return View(departman);//geriye html döndüreceğimizi belirtiyoruz
         }
 
     }
