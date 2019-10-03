@@ -1,7 +1,6 @@
-﻿@using PersonelMVC.Models
+﻿
 @{
     Layout = null;
-    var gelenDepatman =(Departman)ViewData["departman"];
 }
 
 <!DOCTYPE html>
@@ -13,8 +12,7 @@
 </head>
 <body>
     <div>
-        <h1>ViewData ile gelen Id:@gelenDepatman.Id</h1>
-        <h1>ViewData ile gelen Id:@gelenDepatman.Ad</h1>
+        <h1>gelen Id : @ViewData["departmanId"]</h1>
     </div>
 </body>
 </html>

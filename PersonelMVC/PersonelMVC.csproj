@@ -104,8 +104,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Departman\Merhaba.cshtml" />
-    <Content Include="Views\Departman\Test.cshtml" />
     <Content Include="Views\Departman\Detay.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
