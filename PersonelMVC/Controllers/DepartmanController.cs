@@ -1,13 +1,18 @@
-﻿using PersonelMVC.Models;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace PersonelMVC.Controllers
 {
     public class DepartmanController : Controller
     {
-        public ActionResult Detay(int id)
+        public ActionResult Detay(int? id)
         {
-            ViewData["departmanId"] = id;
+            if (id.HasValue)
+
+                ViewData["departmanId"] = id.Value;
+            else
+
+                ViewData["departmanId"] = 0;
+
             return View();
         }
     }
